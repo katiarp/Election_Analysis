@@ -28,6 +28,7 @@ with open(file_to_load) as election_data:
     file_reader = csv.reader(election_data)
 
     #Read and print the header row
+    #############why print to skip?
     headers= next(file_reader)
     print(headers)
 
