@@ -26,7 +26,8 @@ headers= next(file_reader)
     for row in file_reader:
        #Add to the total vote count
         total_votes+=1
- ```I used "headers = next(file_reader)" to skip the headers to get an accurate vote count. Since I had 369,711 rows to check for the number of candidates, I used a decision statement to go over the candidates name to get an accurate count of candidates.
+ ```
+I used "headers = next(file_reader)" to skip the headers to get an accurate vote count. Since I had 369,711 rows to check for the number of candidates, I used a decision statement to go over the candidates name to get an accurate count of candidates.
 
 ```
 candidate_name= row[2]
