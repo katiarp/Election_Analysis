@@ -122,4 +122,4 @@ Some ways in which we could modify the script to be used for any other election 
 
 2. In variable file_to_save, replace the current election results file path with the new file path to save the election results in. 
 
-Overall, we could modify our script adding different variables to make further analysis, furthermore we could use a descriptive name to identify the file in the future, e.g “California 2022 election results.txt”
+Overall, we could modify our script adding different variables to make further analysis, furthermore we could use a descriptive name to identify the file in the future, e.g “California 2022 election results.txt” 
