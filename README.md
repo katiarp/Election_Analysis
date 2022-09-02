@@ -110,8 +110,9 @@ Finally, within the code I saved each result to an output text file called **ele
 
 ## Summary Statement
 
-This script can be modified to process the election results of any other election. 
-Currently, the script can only work with .csv election data files, and the delimiter must be ```“,”```. All the election data files must have the following header row columns, in order:
+This script can be modified to process the election results of any other election. Currently, the script can only work with .csv election data files, and the delimiter must be ```“,”```
+
+All the election data files must have the following header row columns, in order:
 
 ![Image_name](/Resources/election_results_csv_image.png)
 
