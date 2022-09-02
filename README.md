@@ -3,7 +3,7 @@
 ## Project Overview
 The goal of this project was to help the Colorado Board of Elections in an election audit of the tabulated results for U.S Congressional precinct in Colorado. I assisted an employee with the task of reporting the total number of votes for each candidate and the winner of the election based on the popular vote. My job was to generate a vote count report to certify this US congressional race.
 
-The team working on this project decided  to use Python to write the algorithms  to confirm  and analyze the election results. One of the advantages of using Python is that it's easier to perform analysis when working with large data sets. Our data source was a CSV file  including the election results, after a brief inspection I observed that data consisted of a number for the ballot ID, a name for counties and candidates respectively.
+The team working on this project decided  to use Python to write the algorithms  to confirm  and analyze the election results. One of the advantages of using Python is that it's easier to perform analysis when working with large data sets. Our data source was a CSV file  including the election results; after a brief inspection, I observed that data consisted of a number for the ballot ID, a name for counties and candidates.
 
 After we complete the analysis, we need to deliver the following information.
 
@@ -27,7 +27,7 @@ headers= next(file_reader)
        #Add to the total vote count
         total_votes+=1
  ```
-I used "headers = next(file_reader)" to skip the headers and get an accurate vote count. Since I had 369,711 more rows to check for the number of candidates, and checking data rows to check to have an accurate count of candidates and their names I used a decision statement to go over the candidates name. 
+I used "headers = next(file_reader)" to skip the headers to get an accurate vote count. Since I had 369,711 rows to check for the number of candidates, I used a decision statement to go over the candidates name to have an accurate count of candidates
 
 ```
 candidate_name= row[2]
@@ -40,7 +40,7 @@ candidate_name= row[2]
         candidate_votes[candidate_name] +=1
 ```
 
-From this, I identified only three candidates in the data set  who received votes.
+From this, I identified only three candidates in the data set.
 
 - Charles Casper Stockham
 - Diana DeGette
