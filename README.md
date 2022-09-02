@@ -64,7 +64,7 @@ After the election commission reviewed the results, they asked for supplemental 
 - The percentage of votes from each county out of the total count
 - The county with the highest turnout
 
-For this challenge, I analyzed the code I used in the previous report to find out if I could use part of it to provide the additional information requested. 
+For this challenge, I analyzed the code I used in the previous report to find out if I could use part of it in order to provide the additional information requested. 
 
 ## Challenge Summary
 
@@ -104,7 +104,7 @@ This is the script used to do the calculations of the election data file.
     txt_file.write(largest_county_turnout_summary)
 ```
 
-Finally, within the code I saved each result to an output text file called **election_analysis.txt**. This text file will be useful for the election  commission because they can use it to review  the findings or share it with other stakeholders.
+Finally, within the code I saved each result to an output text file called **election_analysis.txt**. This text file will be useful to the election  commission because they can use it to review  the findings or share it with other stakeholders.
 
 
 ![Image_name](/Resources/election_analysis_image.png)
