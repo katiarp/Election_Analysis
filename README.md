@@ -117,11 +117,11 @@ All the election data files must have the following header row columns, in order
 
 ![Image_name](/Resources/election_results_csv_image.png)
 
-Therefore we will need to make sure that the file to be processed meets the above criteria; otherwise, we must modify the script in order to process other types of file.
+Therefore, we will need to make sure that the file to be processed meets the above criteria; otherwise, we must modify the script in order to process other types of file.
 
 Some ways in which we could modify the script to be used for any other election are the following:
 1. In variable file_to_load, we could replace the current path of the election data file with the path of the   new data file to be processed.
 
 2. In variable file_to_save, replace the current election results file path with the new file path to save the election results in. 
 
-Overall, we could modify our script adding different variables to make further analysis, furthermore we could use a descriptive name to identify the file in the future, e.g “California 2022 election results.txt” 
+Overall, we could modify our script adding different variables to make further analysis. Also, we could use a descriptive name to identify the file in the future, e.g “California 2022 election results.txt” 
