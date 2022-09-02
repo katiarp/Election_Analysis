@@ -26,8 +26,7 @@ headers= next(file_reader)
     for row in file_reader:
        #Add to the total vote count
         total_votes+=1
- ```
-I used "headers = next(file_reader)" to skip the headers to get an accurate vote count. Since I had 369,711 rows to check for the number of candidates, I used a decision statement to go over the candidates name to have an accurate count of candidates
+ ```I used "headers = next(file_reader)" to skip the headers to get an accurate vote count. Since I had 369,711 rows to check for the number of candidates, I used a decision statement to go over the candidates name to get an accurate count of candidates.
 
 ```
 candidate_name= row[2]
@@ -49,7 +48,7 @@ From this, I identified only three candidates in the data set.
 After that, I calculated each candidate's vote count and percentage.
 Charles Casper Stockham received a total of 85,213 votes which was 23.0% of the total votes. Raymon Anthony Doane received 11,606 votes, only 3.1% of the total votes. And the winner of the election was Diana DeGette who obtained the most votes, 272,892 votes which was 73.8% of the votes.
 
-This is the formula used in Python to calculate the vote percentage.
+This is the formula I used to calculate the vote percentage.
 ```
  #calculate percentage of votes
         vote_percentage = float(votes)/float(total_votes)*100
@@ -69,7 +68,9 @@ For this challenge, I analyzed the code I used in the previous report to find ou
 ## Challenge Summary
 
  The first thing I did was  to create a list  that was going to hold the counties names ``` county_list = []``` and a dictionary  ``` county_votes={} ``` to hold the counties' total votes. Then I created new variables to hold the voter turnout for each county and percentage of total count and set them to ``` 0 ```.
-With are repetition statement, a ``` for loop ```, I calculated the voter turnout for each county and their percentage of votes out of the total count. Using a decision statement I identified the county with the highest voter turnout. The county with the largest turnout was **Denver**
+With repetition statement, a ``` for loop ```, I calculated the voter turnout for each county and their percentage of votes out of the total count. Using a decision statement I identified the county with the highest voter turnout. The county with the largest turnout was **Denver**
+
+This is the script used to do the calculations of the election data file.
 
 ```
     # Get the county from the county dictionary.
@@ -110,7 +111,7 @@ Finally, within the code I saved each result to an output text file called **ele
 ## Summary Statement
 
 This script can be modified to process the election results of any other election. 
-Currently, the script can only work with .csv election data files, and the delimiter must be “,” and all the election data files must have the following header row columns, in order:
+Currently, the script can only work with .csv election data files, and the delimiter must be ```“,”```. All the election data files must have the following header row columns, in order:
 
 ![Image_name](/Resources/election_results_csv_image.png)
 
